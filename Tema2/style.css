@@ -1,0 +1,93 @@
+html,
+body{
+  background-color: #171717;
+  margin:0;
+  padding:0;
+}
+
+
+/* CSS FOR FRONT SIDE OF CARD */
+
+.post-card-front {
+  width:500px;
+  height:350px;
+  background-color: white;
+  transform:translate(-50%, -50%);
+  left:30%;
+  top:50%;
+  position:absolute;
+  padding:12px;
+  background-image: url("https://octoberphotos.files.wordpress.com/2012/04/galati-faleza-dunare-iulia-kelt-2.jpg");
+  background-size: 600px;
+}
+
+.post-card-front::after {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  bottom: 30px;
+  right: 30px;
+  border: 3px solid white;
+}
+
+.post-card-front-text {
+  font-family: Arial, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  left: 0;
+  padding-left: 100px;
+  bottom: 0;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  right: 140px;
+  z-index: 2;
+}
+
+p {
+  margin: 0;
+}
+
+/* CSS FOR BACK SIDE OF CARD */
+
+.post-card-back{
+  width:500px;
+  height:350px;
+  background-color: white;
+  transform:translate(-50%, -50%);
+  left:60%;
+  top:50%;
+  position:absolute;
+  padding:12px;
+}
+.post-stample-back{
+  width:70px;
+  height:70px;
+  position:absolute;
+  right: 12px;
+  border:1px solid black;
+}
+.post-card-back__title{
+  font-family:'La Belle Aurore';
+}
+.content-back-left{
+  width:calc(50%);
+  font-family:'La Belle Aurore';
+  font-size:21px;
+  line-height:1.2;
+  float:left;
+}
+.content-back-right{
+  width:50%;
+  float:left;
+}
+
+.adress-back-line{
+  display:block;
+  margin: 10px 20px;  
+  font-family:'La Belle Aurore';
+  border-bottom:1px solid black;
+}
